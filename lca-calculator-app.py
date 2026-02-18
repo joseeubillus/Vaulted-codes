@@ -46,7 +46,7 @@ st.set_page_config(page_title="LCA Calculator", page_icon="🌿", layout="center
                    )
 # Title and description
 st.title("Simplified Life Cycle Assessment for Site Selection")
-st.caption("This tool calculates the net CO2e emissions per metric ton of waste processed" \
+st.caption("This tool calculates the waste:CRU ratio and CDR efficiency" \
 "based on TOC content, distance to source, grid electricity, counterfactual storage, and replacement emissions.")
 # Describe the underlying assumptions
 st.subheader("Assumptions")
