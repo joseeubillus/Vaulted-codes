@@ -82,7 +82,7 @@ counterfactual_storage_percentage = st.number_input('Counterfactual storage perc
 # 1. Calculate the gross CO2e
 gross_co2e = toc/100 * c_co2_ratio
 # 2. Calculate transport emissions
-transport_emissions = diesel_combustion_emission_factor*(distance_to_waste/truck_mpg) * (1/truck_capacity_tons)
+transport_emissions = diesel_combustion_emission_factor*(2*distance_to_waste/truck_mpg) * (1/truck_capacity_tons)
 # 3. Calculate energy emissions
 loss_multiplier = 1 + grid_loss
 adjusted_grid_emission_factor = grid_emission_factor * loss_multiplier
